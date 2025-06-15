@@ -1,0 +1,83 @@
+{
+    "Medicamentos": {
+        "Dipirona": {
+            "quantidade": 5,
+            "minimo": 10,
+            "ideal": 30
+        },
+        "Paracetamol": {
+            "quantidade": 35,
+            "minimo": 10,
+            "ideal": 30
+        },
+        "Ibuprofeno": {
+            "quantidade": 40,
+            "minimo": 15,
+            "ideal": 35
+        },
+        "Amoxicilina": {
+            "quantidade": 8,
+            "minimo": 10,
+            "ideal": 25
+        },
+        "Omeprazol": {
+            "quantidade": 20,
+            "minimo": 10,
+            "ideal": 25
+        }
+    },
+    "Materiais Hospitalares": {
+        "Luvas Cirurgicas": {
+            "quantidade": 60,
+            "minimo": 30,
+            "ideal": 50
+        },
+        "Mscaras N95": {
+            "quantidade": 15,
+            "minimo": 20,
+            "ideal": 40
+        },
+        "Soro Fisiolgico 0.9%": {
+            "quantidade": 50,
+            "minimo": 20,
+            "ideal": 60
+        },
+        "Seringas 5ml": {
+            "quantidade": 10,
+            "minimo": 15,
+            "ideal": 40
+        },
+        "Esparadrapo": {
+            "quantidade": 35,
+            "minimo": 20,
+            "ideal": 50
+        }
+    },
+    "Equipamentos": {
+        "Oximetro": {
+            "quantidade": 3,
+            "minimo": 2,
+            "ideal": 5
+        },
+        "Bomba de Infuso": {
+            "quantidade": 6,
+            "minimo": 3,
+            "ideal": 5
+        },
+        "Monitor Multiparamtrico": {
+            "quantidade": 1,
+            "minimo": 2,
+            "ideal": 4
+        },
+        "Desfibrilador": {
+            "quantidade": 2,
+            "minimo": 1,
+            "ideal": 3
+        },
+        "Ventilador Mecanico": {
+            "quantidade": 4,
+            "minimo": 3,
+            "ideal": 5
+        }
+    }
+}
