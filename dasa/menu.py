@@ -14,7 +14,7 @@ def menu():
         print("╚════════════════════════════════════════╝")
         print("\nEscolha uma opção abaixo:")
         print("[1] 🛠️ Adicionar novo item ou remover item")
-        print("[2] 💾 Salvar e Sair")
+        print("[8] 🗂️ Gerenciar Categorias (criar/remover)")
         print("[2] 🔼 Registrar ENTRADA de itens")
         print("[3] 🔽 Registrar SAÍDA de itens")
         print("[4] 📋 Consultar estoque completo")
