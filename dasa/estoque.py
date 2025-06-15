@@ -1,7 +1,19 @@
+
+"""Módulo para operações principais de gestão de estoque.
+
+Contém funções para gerenciar itens, categorias, movimentações
+e consultas no sistema de inventário.
+"""
+
 import time
 from utils import verificar_status, escolher_categoria
 
 def gerenciar_item(estoque):
+    """Gerencia itens do estoque (adicionar ou remover).
+    
+    Args:
+        estoque (dict): Dados do estoque a serem modificados.
+    """
     print("\n🛠️ Gerenciar Itens")
     print("[1] ➕ Adicionar novo item")
     print("[2] ❌ Remover item")
@@ -58,8 +70,12 @@ def gerenciar_item(estoque):
         print("❌ Ação inválida.")
         time.sleep(1)
 
-
 def consultar_estoque(estoque):
+    """Exibe o status completo do estoque.
+    
+    Args:
+        estoque (dict): Dados do estoque a serem exibidos.
+    """
     print("\n📊 Consulta Completa do Estoque")
     if not estoque:
         print("\n⚠️ Estoque vazio.\n")
@@ -73,8 +89,13 @@ def consultar_estoque(estoque):
             print(f"  🔸 {nome}: {dados['quantidade']} unidades (Status: {status})")
     input("\n▶️ Pressione ENTER para voltar ao menu...")
 
-
 def movimentar_item(estoque, tipo):
+    """Registra movimentações de estoque (entrada ou saída).
+    
+    Args:
+        estoque (dict): Dados do estoque a serem modificados.
+        tipo (str): Tipo de movimentação ('entrada' para entrada, 'saida' para saída).
+    """
     print(f"\n{'🔼 Entrada' if tipo == 'entrada' else '🔽 Saída'} de Itens")
     categoria = escolher_categoria(estoque)
     if not categoria:
@@ -99,6 +120,11 @@ def movimentar_item(estoque, tipo):
     time.sleep(1)
 
 def gerenciar_categoria(estoque):
+    """Gerencia categorias do estoque (adicionar ou remover).
+    
+    Args:
+        estoque (dict): Dados do estoque a serem modificados.
+    """
     print("\n📁 Gerenciar Categorias")
     print("[1] ➕ Criar nova categoria")
     print("[2] ❌ Remover categoria")

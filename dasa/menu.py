@@ -1,3 +1,10 @@
+
+"""Módulo contendo a interface do menu principal do sistema de gestão de estoque.
+
+Este módulo fornece uma interface console amigável para operações de gestão de inventário,
+incluindo gestão de itens, categorias, movimentações de estoque e relatórios.
+"""
+
 import os
 import time
 from persistencia import carregar_estoque, salvar_estoque
@@ -5,6 +12,11 @@ from estoque import gerenciar_item, consultar_estoque, movimentar_item, gerencia
 from relatorios import itens_em_alerta
 
 def menu():
+    """Exibe o menu principal e gerencia as interações do usuário.
+    
+    Carrega os dados do estoque e apresenta um loop contínuo do menu até que o usuário escolha sair.
+    Gerencia todas as operações principais delegando para funções apropriadas de outros módulos.
+    """
     estoque = carregar_estoque()
 
     while True:
